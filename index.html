@@ -1,12 +1,343 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>F2E前端開發</title>
+  <meta name="description" content="轉職？成為前端工程師？挑戰自我？三個願望一次滿足!我們的學員來自獸醫、咖啡師、圖像設計師等不同背景
+  他們克服心中的恐懼，冒著最後有可能一無所有的風險挑戰未知的領域，最終成為前端工程師。F">
+  <meta name="keywords" content="前端訓練營 前端課程">
+  <link rel="shortcut icon" type='image/x-icon' href="./imgs/favorite.ico">
+  <link rel="stylesheet" href="./style/main.css">
+  <script defer src="./js/index.js"></script>
 </head>
+
 <body>
-  
+  <nav class="navigation">
+    <h1 class=navigation__website-title>F2E 前端工程師試題</h1>
+    <ul class="navigation__list text-peace" id="List">
+      <li class="navigation__listItem"><a class="navigation__link">挑戰自我</a></li>
+      <li class="navigation__listItem"><a class="navigation__link"></a>課程說明</li>
+      <li class="navigation__listItem"><a class="navigation__link"></a>培訓成果</li>
+    </ul>
+    <div class="navigation__hamburger" id="Hamburger"></div>
+  </nav>
+  <div class="content">
+    <section class="main">
+      <div class="main__container container mx-auto">
+        <div class="title text-peace">
+          <h3 class="title__desc">F2E 前端開發</h3>
+          <h2 class="title__subject">前端工程師排版試題</h2>
+          <p class="title__desc">學會，百萬年薪不是夢</p>
+        </div>
+        <div class="event" id="Event">
+          <div class="event__countdown"></div>
+          <div class="event__details"></div>
+          <div class="event__signUp"></div>
+        </div>
+      </div>
+    </section>
+    <section class="challenge">
+      <div class="intro container mx-auto">
+        <h3 class="intro__title text-peace">轉職？成為前端工程師？挑戰自我？</h3>
+        <h3 class="intro__title text-peace">三個願望一次滿足!</h3>
+        <p class="intro__text">我們的學員來自獸醫、咖啡師、圖像設計師等不同背景
+          他們克服心中的恐懼，冒著最後有可能一無所有的風險
+          挑戰未知的領域，最終成為前端工程師</p>
+        <div class="test">
+          <div class="intro__videoContainer">
+            <img class="intro__video img-resp " src="./imgs/media_video.jpg" alt="學姊分享" width="1880" height="945">
+            <img class="youtube-icon" src="./imgs/youtube-brands.png" alt="youtube連結" width="101" height="71">
+          </div>
+          <div class="intro__imgContaier">
+            <img class="intro__img img-resp" src="./imgs/media_talk.jpg" alt="上課照片" width="1920" height="1097">
+          </div>
+        </div>
+        <button class="btn btn-peace intro__btn" type="button">我想了解更多 »</button>
+      </div>
+    </section>
+    <section class="lesson">
+      <div class="container mx-auto">
+        <h3 class="lesson__title text-peace">想要培養一技之長，成為前端工程師嗎？</h3>
+        <section class="lesson__sec">
+          <p class="lesson__text">第一階段</p>
+          <div class="lesson__syllabus">
+            <div class="box">
+              <div class="box__innerBox">
+                <span class="box__tag">第一週</span>
+                <div class="box__info">
+                  <h5 class="box__subject">程式規劃基礎</h5>
+                  <p class="box__details">組合語言的描述、分析、設計技巧</p>
+                </div>
+                <div class="box__imgContainer">
+                  <img class="box__img img-resp" src="./imgs/card01.jpg" alt="程式規劃基礎" width="768" height="520">
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="box__innerBox">
+                <span class="box__tag">第二週</span>
+                <div class="box__info">
+                  <h5 class="box__subject">物件導向程式設計</h5>
+                  <p class="box__details">具有物件概念的程式設計典範，同時也是一種程式開發的抽象方針。</p>
+                </div>
+                <div class="box__imgContainer">
+                  <img class="box__img img-resp" src="./imgs/card02.jpg" alt="物件導向程式設計" width="640" height="426">
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="box__innerBox">
+                <span class="box__tag">第三週</span>
+                <div class="box__info">
+                  <h5 class="box__subject">資料結構與演算法</h5>
+                  <p class="box__details">了解資料結構，之後在程式的設計上才能更加熟練應該要使用何種資料結構。</p>
+                </div>
+                <div class="box__imgContainer">
+                  <img class="box__img img-resp" src="./imgs/card02.png" alt="資料結構與演算法" width="921" height="574">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="lesson__sec">
+          <p class="lesson__text">第二階段</p>
+          <div class="lesson__syllabus">
+            <div class="box">
+              <div class="box__innerBox">
+                <span class="box__tag">第四週</span>
+                <div class="box__info">
+                  <h5 class="box__subject">各領域語言與框架介紹</h5>
+                  <p class="box__details">框架以應用為目的，結合了多數常用的元件所形成的初始主體架構。</p>
+                </div>
+                <div class="box__imgContainer">
+                  <img class="box__img img-resp" src="./imgs/card04.png" alt="各領域語言與框架介紹" width="638" height="395">
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="box__innerBox">
+                <span class="box__tag">第五週</span>
+                <div class="box__info">
+                  <h5 class="box__subject">版控與開源觀念</h5>
+                  <p class="box__details">版本控制是維護工程藍圖的標準作法，能追蹤工程藍圖從誕生一直到定案的過程。</p>
+                </div>
+                <div class="box__imgContainer">
+                  <img class="box__img img-resp" src="./imgs/card05.png" alt="版控與開源觀念" width="600" height="324">
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="box__innerBox">
+                <span class="box__tag">第六週</span>
+                <div class="box__info">
+                  <h5 class="box__subject">專題規劃技巧</h5>
+                  <p class="box__details">解決問題、蒐集資料、實務應用、團隊合作、知識整合與表達能力。</p>
+                </div>
+                <div class="box__imgContainer">
+                  <img class="box__img img-resp" src="./imgs/card06.jpg" alt="專題規劃技巧" width="540" height="360">
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="box__innerBox">
+                <span class="box__tag">第七週</span>
+                <div class="box__info">
+                  <h5 class="box__subject">專題實作與進度追蹤</h5>
+                  <p class="box__details">制定規則、剷除阻礙，觀察運作流程，發掘可能的問題，進一步優化流程，讓團隊協作得更順暢。</p>
+                </div>
+                <div class="box__imgContainer">
+                  <img class="box__img img-resp" src="./imgs/card07.jpg" alt="專題實作與進度追蹤" width="612" height="408">
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="box__innerBox">
+                <span class="box__tag">第八週</span>
+                <div class="box__info">
+                  <h5 class="box__subject">專題成果發表</h5>
+                  <p class="box__details">在這七週學習以來的第一次成果發表，讓大家看到您耀眼的存在!</p>
+                </div>
+                <div class="box__imgContainer">
+                  <img class="box__img img-resp" src="./imgs/card08.jpg" alt="專題成果發表" width="800" height="452">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="lesson__sec">
+          <p class="lesson__text">第三階段</p>
+          <div class="lesson__syllabus">
+            <div class="box">
+              <div class="box__innerBox">
+                <span class="box__tag">第九週</span>
+                <div class="box__info">
+                  <h5 class="box__subject">進程與執行緒</h5>
+                  <p class="box__details">進程、線程是一定要搞懂與掌握的知識點，可以增進程式的執行效率。</p>
+                </div>
+                <div class="box__imgContainer">
+                  <img class="box__img img-resp" src="./imgs/card09.png" alt="進程與執行緒" width="917" height="437">
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="box__innerBox">
+                <span class="box__tag">第十週</span>
+                <div class="box__info">
+                  <h5 class="box__subject">網際網路概論</h5>
+                  <p class="box__details">全新實用網路新知，完整介紹網路與資料通訊的相關主題與技術。</p>
+                </div>
+                <div class="box__imgContainer">
+                  <img class="box__img img-resp" src="./imgs/card09.jpg" alt="網際網路概論" width="1000" height="1349">
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="box__innerBox">
+                <span class="box__tag">第十一週</span>
+                <div class="box__info">
+                  <h5 class="box__subject">各領域進階語法</h5>
+                  <p class="box__details">了解前端領域符合業界使用的進階技巧，並快速辨別使用的領域，加速開發。</p>
+                </div>
+                <div class="box__imgContainer">
+                  <img class="box__img img-resp" src="./imgs/card11.png" alt="各領域進階語法" width="653" height="490">
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="box__innerBox">
+                <span class="box__tag">第十二週</span>
+                <div class="box__info">
+                  <h5 class="box__subject">近代網頁前端的生態演化</h5>
+                  <p class="box__details">了解網頁前端的前世今生與愛恨糾葛，讓你知道前端技術為什麼這麼火?</p>
+                </div>
+                <div class="box__imgContainer">
+                  <img class="box__img img-resp" src="./imgs/card12.png" alt="近代網頁前端的生態演化" width="533" height="264">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="lesson__sec">
+          <p class="lesson__text">第四階段</p>
+          <div class="lesson__syllabus">
+            <div class="box">
+              <div class="box__innerBox">
+                <span class="box__tag">第十三週</span>
+                <div class="box__info">
+                  <h5 class="box__subject">一起來 Vue 出前端的世界</h5>
+                  <p class="box__details">建立使用者介面的開源 JavaScript 框架，也是一個建立單頁應用的 Web 應用框架。</p>
+                </div>
+                <div class="box__imgContainer">
+                  <img class="box__img img-resp" src="./imgs/card13.png" alt="一起來 Vue 出前端的世界" width="750" height="375">
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="box__innerBox">
+                <span class="box__tag">第十四週</span>
+                <div class="box__info">
+                  <h5 class="box__subject">第一次使用 Node 就上手</h5>
+                  <p class="box__details">能夠在伺服器端運行 JavaScript 的開放原始碼、跨平台執行環境。</p>
+                </div>
+                <div class="box__imgContainer">
+                  <img class="box__img img-resp" src="./imgs/card14.png" alt="第一次使用 Node 就上手" width="400" height="210">
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="box__innerBox">
+                <span class="box__tag">第十五週</span>
+                <div class="box__info">
+                  <h5 class="box__subject">專題成果發表</h5>
+                  <p class="box__details">藉由第二次的成果發表，聯合各廠商來媒合專業人才，讓您結業即就業。</p>
+                </div>
+                <div class="box__imgContainer">
+                  <img class="box__img img-resp" src="./imgs/card15.png" alt="專題成果發表" width="400" height="228">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <button class="btn btn-clean">我有興趣 »</button>
+      </div>
+    </section>
+    <section class="record container mx-auto">
+      <p class="record__title">培訓成果</p>
+      <div class="card">
+        <div class="card__container">
+          <p class="card__text"><span class="card__num text-peace">159</span> 人</p>
+          <p class="card__text">結訓校友</p>
+        </div>
+        <div class="card__container">
+          <p class="card__text"><span class="card__num text-peace">85</span> %</p>
+          <p class="card__text">成功轉職率</p>
+        </div>
+        <div class="card__container">
+          <p class="card__text"><span class="card__num text-peace">90</span> %</p>
+          <p class="card__text">成為前端工程師</p>
+        </div>
+      </div>
+      <table class="table">
+        <thead class="table__head">
+          <tr class="table__headList">
+            <th class="table__headItem"></th>
+            <th class="table__headItem">培訓人數</th>
+            <th class="table__headItem">結訓人數</th>
+            <th class="table__headItem">就業人數</th>
+          </tr>
+        </thead>
+        <tbody class="table__body">
+          <tr class="table__item">
+            <td class="table__id">第一屆</td>
+            <td class="table__totalStudents">21 人</td>
+            <td class="table__graduates">17 人</td>
+            <td class="table__frontends">前端工程師 16 人</td>
+          </tr>
+          <tr class="table__item">
+            <td class="table__id">第二屆</td>
+            <td class="table__totalStudents">20 人</td>
+            <td class="table__graduates">17 人</td>
+            <td class="table__frontends">前端工程師 13 人</td>
+          </tr>
+          <tr class="table__item">
+            <td class="table__id">第三屆</td>
+            <td class="table__totalStudents">40 人</td>
+            <td class="table__graduates">38 人</td>
+            <td class="table__frontends">前端工程師 26 人</td>
+          </tr>
+          <tr class="table__item">
+            <td class="table__id">第四屆</td>
+            <td class="table__totalStudents">33 人</td>
+            <td class="table__graduates">27 人</td>
+            <td class="table__frontends">前端工程師 21 人</td>
+          </tr>
+          <tr class="table__item">
+            <td class="table__id">第五屆</td>
+            <td class="table__totalStudents">28 人</td>
+            <td class="table__graduates">22 人</td>
+            <td class="table__frontends">前端工程師 17 人</td>
+          </tr>
+          <tr class="table__item">
+            <td class="table__id">第六屆</td>
+            <td class="table__totalStudents">29 人</td>
+            <td class="table__graduates">20 人</td>
+            <td class="table__frontends">前端工程師 16 人</td>
+          </tr>
+        </tbody>
+      </table>
+      <button class="btn btn-peace">我想了解更多 »</button>
+    </section>
+    <footer class="footer">
+      <div class="container mx-auto">
+        <p class="footer__title">前端工程師試題</p>
+        <p class="footer__desc">本試題純屬練習與測試，文案與影像都為網路上取得而來，請勿營利使用!!</p>
+        <p class="footer__desc">Design by Away</p>
+      </div>
+    </footer>
+  </div>
 </body>
+
 </html>
