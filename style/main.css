@@ -14,6 +14,10 @@ ul {
   list-style-type: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* --- Utils --- */
 /* Helper */
 .img-resp {
@@ -49,6 +53,19 @@ ul {
   color: #24b4d7;
   background-color: #fff;
 }
+.btn-taro {
+  color: #3c37de;
+  padding: 10px 30px;
+  font-size: 1.2rem;
+  background-color: #fff;
+}
+.circle-ocean {
+  background-color: #22a9ca;
+}
+.circle-gizzly {
+  background-color: #ddd;
+}
+
 /* --- Layouts --- */
 .container {
   max-width: 1200px;
@@ -66,7 +83,7 @@ ul {
   justify-content: space-between;
   box-sizing: border-box;
   align-items: center;
-  margin: 10px;
+  padding: 10px;
 }
 .navigation__website-title {
   width: 167px;
@@ -83,17 +100,25 @@ ul {
 .navigation__listItem {
   margin-right: 20px;
 }
+.navigation__link {
+  color:#24b4d7;
+}
+.nav-active {
+  color: #474747;
+  background-color: rgba(255, 255, 255, .7);
+}
 
 .main {
   position: relative;
-  height: 885px;
+  height: 80vh;
   background-image: url(../imgs/banr_snow.jpg);
   background-position: center center;
-  background-size:100% auto;
+  background-size: 100% auto;
   background-repeat: no-repeat;
 }
 
 .main__container {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -125,10 +150,111 @@ ul {
 .title p {
   font-weight: 900;
 }
+/* Module event */
+.event {
+  position: absolute;
+  bottom: -10%;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-evenly;     
+  color: #fff;                             
+}
+.event__countdown {
+  width: 25%;
+  display: flex;
+  background-color: #24b4d7;
+}
+.event__countItem {
+  text-align: center;
+  margin: auto;
+}
+.event__info {
+  font-size: 2rem;
+}
+.event__num {
+  font-size: 1.5rem;
+}
+.event__text {
+  margin-top: .4rem;
+  font-size: 1.3rem;
+}
+.event__details {
+  display: flex;
+  box-sizing: border-box;
+  width: 34%;
+  background-color: #4dc4e1;
+}
+.event__ui {
+  position: relative;
+  display: flex;
+  margin: 20px 60px;
+}
+.event__outer-line {
+  width: 300px;
+  height: 5px;
+  margin: auto;
+  background-color: #ddd;                        
+}
+.event__inner-line {
+  height: 100%;
+  background-color: #22a9ca;
+}
+.event__item {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 25%;
+  margin-left: -10%;
+  font-size: .8rem;
+}
+.event__zero {
+  left: 0%;
+}
+.event__quarter {
+  left: 25%;
+}
+.event__half {
+  left: 50%;
+}
+.event__full {
+  right: -10%;
+}
+.event__outer-circle {
+  position: relative;
+  top: 42%;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+.event__inner-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 5px;
+  height: 5px;
+  margin: -2.5px 0px 0px -2.5px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.event__studentCounts {
+  position: absolute;
+  top: 0%;
+}
+.event__signUp {
+  width: 25%;
+  box-sizing: border-box;
+  padding: 20px 75px;
+  background-color: #918eec;
+}
 
 .challenge {
-  margin-top: 140px;
-  margin-bottom: 130px;
+  padding-top: 140px;
+  padding-bottom: 130px;
 }
 /* Module intro */
 
@@ -146,7 +272,7 @@ ul {
   width: 50%;
   height: 300px;
   position:relative;
-  z-index: 2;
+  z-index: 1;
   margin-top: 5%;
   text-align: center;
   transform: skewX(-30deg);
@@ -176,16 +302,17 @@ ul {
   position:absolute;
   top: 40%;
   left: 42%;
-  z-index: 2;
+  z-index: 1;
   opacity: .7;
   transform: skewX(30deg);
+  cursor: pointer;
 }
 .intro__imgContaier {
   position:relative;
-  z-index: 1;
+  z-index: 0;
   width: 40%;
   height: 500px;
-  margin-top: -20%;
+  margin-top: -15%;
   transform: skewX(-30deg);
   text-align: center;
   overflow: hidden;
@@ -218,8 +345,11 @@ ul {
   display: inline-block;
   font-size: 3rem;
   padding: 10px 35px;
+  margin-top: -50px;
   margin-bottom: 75px;
   background-color: #fff;
+  opacity: 0;
+  transition: 1s opacity linear;
 }
 
 .lesson__text {
@@ -291,8 +421,8 @@ ul {
 }
 
 .record {
-  margin-top: 130px;
-  margin-bottom: 130px;
+  padding-top: 130px;
+  padding-bottom: 130px;
   text-align: center;
 }
 .record__title {
@@ -352,6 +482,21 @@ ul {
 }
 .table__item:nth-child(even) {
   background-color: #f6f6f6;
+}
+/* Module youtube */
+.youtube {
+  position: fixed;
+  display: none;
+  z-index: 3;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  background-color: rgba(0, 0, 0, .5);
+}
+.youtube__container {
+  display: flex;
+  margin: auto;
 }
 /* Module footer */
 .footer {

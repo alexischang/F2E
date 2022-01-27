@@ -15,17 +15,19 @@
 </head>
 
 <body>
-  <nav class="navigation">
-    <h1 class=navigation__website-title>F2E 前端工程師試題</h1>
+  <nav class="navigation" id="Nav">
+    <a class="navigation__link" href="#Main">
+      <h1 class="navigation__website-title">F2E 前端工程師試題</h1>
+    </a>
     <ul class="navigation__list text-peace" id="List">
-      <li class="navigation__listItem"><a class="navigation__link">挑戰自我</a></li>
-      <li class="navigation__listItem"><a class="navigation__link"></a>課程說明</li>
-      <li class="navigation__listItem"><a class="navigation__link"></a>培訓成果</li>
+      <li class="navigation__listItem"><a class="navigation__link" href="#Challenge">挑戰自我</a></li>
+      <li class="navigation__listItem"><a class="navigation__link" href="#Lesson">課程說明</a></li>
+      <li class="navigation__listItem"><a class="navigation__link" href="#Record">培訓成果</a></li>
     </ul>
     <div class="navigation__hamburger" id="Hamburger"></div>
   </nav>
   <div class="content">
-    <section class="main">
+    <section class="main" id="Main">
       <div class="main__container container mx-auto">
         <div class="title text-peace">
           <h3 class="title__desc">F2E 前端開發</h3>
@@ -33,13 +35,9 @@
           <p class="title__desc">學會，百萬年薪不是夢</p>
         </div>
         <div class="event" id="Event">
-          <div class="event__countdown"></div>
-          <div class="event__details"></div>
-          <div class="event__signUp"></div>
         </div>
-      </div>
     </section>
-    <section class="challenge">
+    <section class="challenge" id="Challenge">
       <div class="intro container mx-auto">
         <h3 class="intro__title text-peace">轉職？成為前端工程師？挑戰自我？</h3>
         <h3 class="intro__title text-peace">三個願望一次滿足!</h3>
@@ -49,7 +47,8 @@
         <div class="test">
           <div class="intro__videoContainer">
             <img class="intro__video img-resp " src="./imgs/media_video.jpg" alt="學姊分享" width="1880" height="945">
-            <img class="youtube-icon" src="./imgs/youtube-brands.png" alt="youtube連結" width="101" height="71">
+            <img class="youtube-icon" src="./imgs/youtube-brands.png" alt="youtube連結" width="101" height="71"
+              id="Video">
           </div>
           <div class="intro__imgContaier">
             <img class="intro__img img-resp" src="./imgs/media_talk.jpg" alt="上課照片" width="1920" height="1097">
@@ -58,7 +57,7 @@
         <button class="btn btn-peace intro__btn" type="button">我想了解更多 »</button>
       </div>
     </section>
-    <section class="lesson">
+    <section class="lesson" id="Lesson">
       <div class="container mx-auto">
         <h3 class="lesson__title text-peace">想要培養一技之長，成為前端工程師嗎？</h3>
         <section class="lesson__sec">
@@ -264,7 +263,7 @@
         <button class="btn btn-clean">我有興趣 »</button>
       </div>
     </section>
-    <section class="record container mx-auto">
+    <section class="record container mx-auto" id="Record">
       <p class="record__title">培訓成果</p>
       <div class="card">
         <div class="card__container">
@@ -337,6 +336,13 @@
         <p class="footer__desc">Design by Away</p>
       </div>
     </footer>
+  </div>
+  <div class="youtube" id="Youtube">
+    <div class="youtube__container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/syFyL9tONRA" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
   </div>
 </body>
 
